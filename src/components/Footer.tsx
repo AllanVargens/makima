@@ -35,7 +35,7 @@ export function Footer() {
           w='80%'
           mx='auto'>
 
-        <Stack direction='row' spacing={16} justify='space-between'>
+        <Stack direction='row' spacing={16} justify='space-between' flexWrap='wrap'>
           <Stack direction='column' spacing={1}>
             <Box as='h2'
               fontSize='1.2rem'
@@ -74,17 +74,16 @@ export function Footer() {
             <Box as='h2'
               fontSize='1.2rem'
               fontWeight='bold'
-              ml='-4px'
-              
+              ml='-4px' 
             >Contact
             </Box>
-            <Box as="a" href='mailto:exemplo@gmail.com' cursor='pointer' display='inline-flex' alignItems='center' gap={1} wordBreak='break-all'>
+            <Box as="a" href='mailto:exemplo@gmail.com' cursor='pointer' display='inline-flex' alignItems='center' gap={1}>
               <IoMailOutline />
-              <Text>exemplo@gmail.com</Text>
+              <Text wordBreak='break-all'>exemplo@gmail.com</Text>
             </Box>
             <Box as="a" href='tel:+5573999999999' cursor='pointer' display='inline-flex' alignItems='center' gap={1}>
               <MdOutlinePhoneEnabled />
-              <Text>+5573999999999</Text>
+              <Text wordBreak='break-all'>+5573999999999</Text>
             </Box>
           </Stack>
         </Stack>

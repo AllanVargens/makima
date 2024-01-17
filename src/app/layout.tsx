@@ -19,7 +19,7 @@ export default function RootLayout({
         <Providers>
           {!excludeNavbarPages.includes(navigation) && <Navbar />}
           {children}
-          <Footer />
+          {!excludeNavbarPages.includes(navigation) && <Footer />}
         </Providers>
       </body>
     </html>

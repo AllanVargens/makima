@@ -1,18 +1,19 @@
-import { Box, Button, Flex, FormControl, FormLabel, HStack, Heading, IconButton, Input, Stack } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, FormLabel, HStack, Heading, IconButton, Image, Input, Stack } from "@chakra-ui/react";
+import { color } from "framer-motion";
 import Link from "next/link";
 import { IoArrowBack } from "react-icons/io5";
 
 export default function PageLogin() {
   return (
     <HStack w='full' h='100vh'>
-      <Flex w='full' h='full' background='gray' align='center' justify='center' direction='column' gap={2} display={{ base: 'none', md: 'flex' }}>
-        <p>Imagem</p>
-        <Button gap={2} w='max-content'>
-          <Link href='/'>
+      <Flex w='full' h='full' backgroundColor='#1CBB9B' align='center' justify='center' direction='column' gap={2} display={{ base: 'none', md: 'flex' }}>
+        <Image src="/logo-semFundo.png" maxW='20rem' maxH='24rem' />
+        <Link href='/'>
+          <Button gap={2} w='max-content' alignItems='center' border='1px' borderColor='#1F7368' bg='none' color='#0e453f' _hover={{color: 'white', bg: '#0e453f'}}>
             Home page
             <IoArrowBack />
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </Flex>
       <Flex w='full' h='full' alignItems='center' justifyContent='center'>
         <Stack w='full' maxW='md' spacing={4} p={6}>
@@ -34,7 +35,7 @@ export default function PageLogin() {
             <Link href='#'>Forgot Password?</Link>
           </Stack>
 
-          <Button>
+          <Button color='white' bg='#1F7368' _hover={{bg: '#0e453f'}}>
             Sign in
           </Button>
         </Stack>

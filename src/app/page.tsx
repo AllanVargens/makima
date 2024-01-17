@@ -1,4 +1,7 @@
+import { Content } from "@/components/Content";
+import { FAQ } from "@/components/FAQ";
 import { Header } from "@/components/Header";
+import { WhereUse } from "@/components/WhereUse";
 import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 
@@ -10,6 +13,9 @@ export default function Home() {
       </Head>
       <Box as="main">
         <Header />
+        <Content />
+        <WhereUse />
+        <FAQ/>
       </Box>
     </>
   )
